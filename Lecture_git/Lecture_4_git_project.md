@@ -127,12 +127,12 @@ git branch
 
 push 이후에 자신의 github에 접속하여 Repository에서 페이지를 새로고침 해보면 새로운 branch를 생성해 push했다는 알림 메시지와 함께 Compare & pull request 버튼을 볼 수 있다.
 
-<img src="./img/Lecture3_img16.png" width="600" height="auto" />
+<img src="./img/Lecture4_img1.png" width="600" height="auto" />
 
 Pull request(PR)은 팀원의 소스코드를 main branch에 올리기 전에 팀장에게 확인받는 과정이라고 생각하면 된다.
 팀장은 팀원에게 남길 메시지와 함께 create pull request를 한다.
 
-<img src="./img/Lecture3_img17.png" width="600" height="auto" />
+<img src="./img/Lecture4_img2.png" width="600" height="auto" />
 
 ## 팀 리더
 
