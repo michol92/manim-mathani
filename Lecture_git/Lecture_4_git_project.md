@@ -13,8 +13,10 @@ git을 사용하기 위해 환경설정을 하자. 컴퓨터마다 처음에만 
 ```bash
 git config --global user.name "내 이름"
 git config --global user.email "내 이메일"
-git config --list <!-- 환경설정이 잘 되었는지 확인 -->
+git config --list
 ```
+
+--list는 환경설정이 잘 되었는지 확인용이다.
 
 2. git 초기화 하기(git Initiallize)
 
