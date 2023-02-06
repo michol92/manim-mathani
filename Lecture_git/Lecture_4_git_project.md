@@ -16,7 +16,7 @@ git config --global user.email "내 이메일"
 git config --list
 ```
 
-fit config --list는 환경설정이 잘 되었는지 확인용이다.
+git config --list는 환경설정이 잘 되었는지 확인용이다.
 
 2. git 초기화 하기(git Initiallize)
 
