@@ -1,0 +1,68 @@
+from manim import *
+class pythagoras05(Scene):
+    def construct(self):
+        title=Tex("피타고라스 정리의 증명 (5)").to_edge(UL)
+        pC=np.array((-4,-2.5,0)) #직각있는 점위치
+        b=3 #변b의 길이
+        texp=np.array((3,2.5,0)) #텍스시작 위치
+        #설정끝
+        pA=pC+RIGHT*b
+        pB=pC+UP*3*b/4
+        pD=pB+UP*b
+        pF=pD+RIGHT*3*b/4
+        tri=Polygon(pA,pB,pC,stroke_color=WHITE)
+        tri_texa=MathTex(r"a").next_to(tri,LEFT)
+        tri_texb=MathTex(r"b").next_to(tri,DOWN)
+        tri_texc=MathTex(r"c").move_to(tri).shift(UP*0.3)
+        tri_c=tri.copy()
+        sumt1=MathTex(r"\frac{1}{2}ab",color=RED).move_to(pC+UP*b/4+RIGHT*b/3)
+        sumt2=MathTex(r"\frac{1}{2}ab",color=RED).move_to(pB+UP*b*2/3+RIGHT*b/4)
+        sumt3=MathTex(r"\frac{1}{2}c^2",color=RED).move_to(pB+RIGHT*b/2)
+        tex_all=MathTex(r"{{\frac{1}{2}ab}}+{{\frac{1}{2}ab}}+{{\frac{1}{2}c^2}}={{\frac{1}{2}(a+b)^2}}",color=RED)
+        tex_all.move_to(np.array((3,2.5,0)))
+        self.add(title,tri,tri_texa,tri_texb,tri_texc)
+        self.wait()
+        self.play(FadeIn(sumt1),FadeOut(tri_texc))   
+        self.wait(0.5)
+        self.play(tri_c.animate.shift(pB-pA).rotate(-PI/2,about_point=pB)
+                  ,FadeOut(title),run_time=2)
+        self.play(FadeIn(sumt2))
+        self.wait(0.5)
+        line=Line(pF,pA)
+        self.play(Create(line),FadeIn(tri_texc),run_time=2)
+        self.wait(0.5)
+        self.play(FadeIn(sumt3))
+        self.wait(0.5)
+        self.add(tex_all[1],tex_all[3],tex_all[5])
+        self.play(sumt1.animate.move_to(tex_all[0])
+                  ,sumt2.animate.move_to(tex_all[2])
+                  ,sumt3.animate.move_to(tex_all[4]))
+        rhom=Polygon(pD,pC,pA,pF,stroke_color=BLUE)
+        self.wait(0.5)
+        self.play(FadeOut(tri_texa,tri_texb,tri_texc),FadeIn(rhom))     
+        self.wait(0.5)
+        bra_b=Brace(rhom)
+        bra_b_tex=bra_b.get_tex(r"b")
+        bra_a=Brace(Line(pD,pF),direction=UP)
+        bra_a_tex=bra_a.get_tex(r"a")
+        bra_ab=Brace(Line(pD,pC),direction=LEFT)
+        bra_ab_tex=bra_ab.get_tex(r"a+b")
+        self.play(FadeIn(bra_b,bra_b_tex))
+        self.play(FadeIn(bra_a,bra_a_tex))
+        self.play(FadeIn(bra_ab,bra_ab_tex))
+        self.wait(0.5)
+        sumt4=MathTex(r"\frac{1}{2}(a+b)^2",color=RED).move_to(rhom)
+        self.play(FadeIn(sumt4))        
+        self.wait(0.5)
+        self.play(sumt4.animate.move_to(tex_all[6]))
+        self.wait(0.5)
+        sumt_a2=MathTex(r"2ab+c^2=(a+b)^2",color=RED).move_to(texp+DOWN*1.5)
+        self.play(FadeIn(sumt_a2))        
+        self.wait(0.5)
+        sumt_a3=MathTex(r"2ab+c^2=a^2+2ab+b^2",color=RED).move_to(texp+DOWN*2.5)
+        self.play(FadeIn(sumt_a3))        
+        self.wait(0.5)
+        sumt_a4=MathTex(r"c^2=a^2+b^2",color=RED).move_to(texp+DOWN*3.5)
+        self.play(FadeIn(sumt_a4))        
+        self.wait(3)
+        
