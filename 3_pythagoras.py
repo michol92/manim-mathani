@@ -54,4 +54,4 @@ class pythagoras03(Scene):
         self.wait(0.5)
         self.play(text_c.animate.move_to(text_all[2]))
         self.play(FadeIn(title))
-        self.wait(3)
+        self.wait(3) 
