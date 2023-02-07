@@ -1,0 +1,57 @@
+from manim import *
+class pythagoras03(Scene):
+    def construct(self):
+        #설정 시작
+        title=Tex("피타고라스 정리의 증명 (3)").to_edge(UL)
+        leng=2.5  #가장 큰 사각형 한변의 길이
+        sq_c_center=[0,-1.4,0]   #가장 큰 사각형 위치
+        poly_cfg={"stroke_color":WHITE,"fill_color":RED,"fill_opacity":0.9} #도형속성
+        #설정 끝
+        sq_c=Square(side_length=leng).shift(sq_c_center)
+        sq_a=Square(side_length=leng*3/5).rotate(np.arctan(4/3))
+        sq_b=Square(side_length=leng*4/5).rotate(-np.arctan(3/4))
+        sq_a.shift(sq_c.get_vertices()[1]-sq_a.get_vertices()[2])
+        sq_b.shift(sq_c.get_vertices()[0]-sq_b.get_vertices()[3])
+        ap=sq_a.get_vertices()
+        bp=sq_b.get_vertices()
+        cp=sq_c.get_vertices()
+        text_a=MathTex(r"a^2",font_size=50).move_to(sq_a)
+        text_b=MathTex(r"b^2",font_size=50).move_to(sq_b)
+        text_c=MathTex(r"c^2",font_size=50).move_to(sq_c)
+        p=ap[3]+UP*leng
+        self.add(title,sq_c,sq_a,sq_b)  #기본화면 설정 끝
+        v_all=Polygon(p,cp[1]+UP*leng,cp[1],ap[3],cp[0],cp[0]+UP*leng,**poly_cfg)
+        text_all=MathTex(r"{{a^2+b^2}}","=","{{c^2}}",font_size=50).to_edge(DOWN)
+        text_left=MathTex(r"{{a^2}}+{{b^2}}",font_size=50).move_to(v_all.get_center()-np.array([0.2,0,0]))
+        v_tri=Polygon(ap[3],cp[1],cp[0],**poly_cfg)
+        v_squ=Polygon(cp[0],cp[1],cp[2],ap[3]+DOWN*leng,cp[3],**poly_cfg)
+        sq1=sq_a.copy().set_fill(RED,opacity=0.9)
+        self.play(FadeIn(sq1,text_a,text_b,text_c),FadeOut(title), run_time=2)
+        line1=DashedLine(ap[0],p)
+        self.play(Create(line1))
+        sq11=Polygon(p,cp[1]+UP*leng,ap[2],ap[3],**poly_cfg)
+        self.play(Transform(sq1,sq11),text_a.animate.move_to(text_left[0]),run_time=2)
+        sq2=sq_b.copy().set_fill(RED,opacity=0.9)
+        self.add(sq2,text_b)
+        line2=DashedLine(bp[1],p)
+        self.play(Create(line2))
+        sq22=Polygon(bp[3]+UP*leng,p,bp[2],bp[3],**poly_cfg)
+        self.play(Transform(sq2,sq22),text_b.animate.move_to(text_left[2]),run_time=2)
+        self.wait()
+        self.remove(sq1,sq2,text_a,text_b)
+        self.add(v_all,text_left)
+        self.wait(0.5)
+        self.play(FadeOut(line1,line2,text_c),VGroup(v_all,text_left).animate.shift(DOWN*leng),run_time=2)
+        self.wait(0.5)
+        self.add(v_tri,v_squ,text_left)
+        self.remove(v_all)
+        self.wait(0.5)
+        self.play(v_tri.animate.shift(DOWN*leng),run_time=2)
+        self.add(text_all[1])
+        self.play(text_left.animate.move_to(text_all[0]),run_time=2)       
+        self.wait(0.5)
+        self.play(FadeOut(v_tri,v_squ),FadeIn(text_c))
+        self.wait(0.5)
+        self.play(text_c.animate.move_to(text_all[2]))
+        self.play(FadeIn(title))
+        self.wait(3)
