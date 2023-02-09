@@ -64,3 +64,56 @@ git push -m origin main
 ```
 
 ## branch로 push하기
+
+협업을 할 때는 각기 다른 기능 또는 별개의 작업을 하는 경우가 대부분이다. 이러한 경우 main branch와 섞이지 않도록 새로운 branch를 만들어 협업을 하여야 한다. 모두 다 새로운 branch에서 원격 저장소로 push 할 수 있다.
+branch는 팀장, 팀원1, 팀원2 모두 만들 수 있다.
+팀원 1은 원격 저장소에 다른 팀원들의 commit이 추가되어 있을 수 있어 이를 확인하기 위해서 pull을 하자.
+
+```git
+git pull
+```
+
+그리고 이제 새로운 작업을 위해서 로컬 컴퓨터에 새로운 branch를 만들고 이름을 team1으로 하고 바로 만든 branch로 이동 한다.(이때 checkout 하였다고 한다.)
+
+```git
+git branch -b team1
+```
+
+-b 플래그는 branch를 만드고 바로 만든 branch로 이동하라는 것이다.
+
+문서 test02.py를 만들고 commit을 한다.
+
+```git
+git add test02.py
+git commit -m "test02.py in branch team1"
+```
+
+원격 저장소에 branch 까지 원격 저장소에 push 하기 위해서 git push 뒤에 origin 브랜치 명으로 적어주면 원격 저장소에 새로은 브랜치를 push 한다.
+
+```git
+git push origin team1
+```
+
+## pull request로 push한 branch merge 하기
+
+원격 저장소의 파일목록에는 team1 브랜치에서 만들었던 test.py 파일이 없다.
+push한 브랜치는 pull request를 통해 병합해야 원격 저장소에 반영이 되기 때문이다.
+​
+
+1. branch 설명 옆에 New pull request 버튼을 클릭한다.
+   ​
+1. 풀 리퀘스트에 대한 메세지를 작성 한 후 Create pull request를 누르면 협업중인 저장소에 풀 리퀘스트가 전송된다.
+   ​
+1. 협업중인 원격 저장소에 등록된 풀 리퀘스트는 공동 작업자 중 누구나 병합할 수 있다.
+   저장소 파일 목록 위의 Pull request를 누르면 등록된 풀리퀘스트 목록이 나온다.
+   ​
+1. 풀 리퀘스트 메세지를 살펴본 다음 이상이 없으면 Merge pull request를 누럴 병합한다.
+   필요하다면 이 공간을 통해 풀 리퀘스트를 남긴 사람과 메시지를 주고 받을 수도 있다.
+   ​
+1. 커밋 메시지를 직접 입력하거나 기본메세지를 사용할수 있습니다. Confirm merge 버튼을 누르면 브랜치 병합이 마무리된다.
+   ​
+1. 브랜치가 병합되면 해당 브랜치에 있던 파일이 master 화면에 나타납니다. 브랜치 상태를 알고 싶다면 파일 목록 위에 있는 '2 branches'를 누르자.
+   ​
+1. 브랜치가 병합된 상태라면 'merged'라고 표시된다. 또한 어떤 협업자가 브랜치를 병합했는지도 알수 있다.
+   ​
+1. 깃허브에서 협업을 할 때는 보통 작업자 마다 브랜치를 만들어서 진행하고, 작업 중간중간 풀리퀘스트를 보내서 manin 브랜치에 병합한다. 그래서 깃허브로 협업을 할 때는 다른 작업자의 변경 내용을 바로 반영하기 위해 항상 pull을 먼저 당긴후에 자신의 작업을 진행하는 것을 권장한다.
