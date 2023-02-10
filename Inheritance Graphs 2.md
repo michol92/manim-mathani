@@ -1,8 +1,15 @@
 ---
-title: FadeIn
+title: Cameras
 ---
 
 ```mermaid
-stateDiagram-v2
-[*] --> FadeIn
+graph LR
+* --> camera
+camera --> MappingCamera
+camera --> MovingCamera
+MovingCamera --> MultiCamera
+camera --> OldMultiCamera
+OldMultiCamera --> SplitScreenCamera
+camera --> ThreeDCamera
+* --> BackgroundcoloredVMobjectDisplayer
 ```
