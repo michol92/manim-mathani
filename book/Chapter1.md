@@ -16,14 +16,8 @@
 `Manim`은 유튜버 3Blue1Brown 팀의 스테포드 대학교에서 수학을 전공한 Grant Sanderson이 제작한 수학 애니메이션용 파이썬 패키지이로 'Mathematical Animation Engine'의 약자이다. 3Blue1Brown 팀의 영상 제작에 사용되며 2021년 2월에 공개되었다. FFmpeg와 OpenGL, LaTeX이 설치가 되어 있어야 manim을 구동할 수 있다.좀 더 개발을하기 하기 위해서는 sox가 필요하다.  
  또한 manim을 기반으로 여러가지 플러그인을 설치할 수 있다. 주요 플러그인은 [manin-physics](https://github.com/Matheart/manim-physics), [manin-voiceover](https://voiceover.manim.community/en/stable/), [manim-slider](https://github.com/jeertmans/manim-slides) 등이 있다.
 
-<figure>
-    <img src="./images/3B1B_Logo_480.png" width="30%">          
-    <figcaption>3Blue1Brown 로고</figcaption>
-</figure>
-<figure>
-    <img src="./images/Grant%20Sanderson.jpeg" width="70%">          
-    <figcaption>Grant Sanderson</figcaption>
-</figure>
+![w:300](./images/3B1B_Logo_480.png)
+![w:300](./images/Grant%20Sanderson.jpeg)
 
 2023년 2월 기준, Manim 과 ManimGL, ManimCairo 세 가지 버전이 있다.[1].  
 ① Manim: PyPI 패키지에서 manim으로 등록되어 있음. 코드 내에서도 manim이라 작성하여 사용한다. 2020년 일부 개발자들이 오픈소스 커뮤니티의 이점을 가지고 발전시키기 위해 ManimCairo 커뮤니티를 복제하여해서 만든 커뮤니티 버전이다. Reference Manual 과 예제 소개 등의 문서화가 잘 되어있고, JupyterLab 을 이용하면 렌더링 결과를 바로 볼 수도 있다. 커뮤니티 기반임을 강조하기 위해 manimCE 라고도 부른다. 지금 현재(2023년 2월 28일) 최신 버전 0.17.2이다.  
@@ -35,10 +29,7 @@
 
 <!--![w:300](./images/manim_vs_manimgl_vs_manimcario.jpeg "스피드, 코드 퀄리티, 용량")-->
 
-<figure>
-    <img src="./images/manim_vs_manimgl_vs_manimcario.jpeg" title="스피드, 코드 퀄리티, 용량" width="70%">          
-    <figcaption>스피드, 코드 퀄리티, 용량</figcaption>
-</figure>
+![w:300](./images/manim_vs_manimgl_vs_manimcario.jpeg)
 
 ## Manim 참고 메뉴얼 및 github
 
