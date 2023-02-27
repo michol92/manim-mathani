@@ -91,4 +91,4 @@ class CreateCircle(Scene):
 ```
 
 렌더링을 실행하자. 그러면 아래와 같이 실행이 된다.  
-![영상 실행](./movies/EX_3-3.mp4)
+![영상 실행](./movies/EX_3-3.gif)
