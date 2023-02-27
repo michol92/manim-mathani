@@ -22,7 +22,7 @@
 2023년 2월 기준, Manim 과 ManimGL, ManimCairo 세 가지 버전이 있다.[1].  
 ① Manim: PyPI 패키지에서 manim으로 등록되어 있음. 코드 내에서도 manim이라 작성하여 사용한다. 2020년 일부 개발자들이 오픈소스 커뮤니티의 이점을 가지고 발전시키기 위해 ManimCairo 커뮤니티를 복제하여해서 만든 커뮤니티 버전이다. Reference Manual 과 예제 소개 등의 문서화가 잘 되어있고, JupyterLab 을 이용하면 렌더링 결과를 바로 볼 수도 있다. 커뮤니티 기반임을 강조하기 위해 manimCE 라고도 부른다. 지금 현재(2023년 2월 28일) 최신 버전 0.17.2이다.  
 ② ManimGL: PyPI 패키지에서 manimgl로 등록되어 있음. 파이썬 코드 내에선 manimlib라 작성하고 사용한다. 원 저작자 Grant Sanderson가 직접 관리하고 3Blue1Brown 애니메이션 작성할 때 이용하는 패키지이다. 하지만 스스로 사용하기 위해 만드는 것이기 때문에 공식 저장소에서는 이용자가 하위호환성, 문서화, 테스트, 커뮤니티 소통 등을 원한다면 커뮤니티 버전을 이용할 것을 README에서부터 권하고 있다.[2] Grant가 공개하고 있는 3Blue1Brown 유튜브 애니메이션에 쓰인 소스코드를 가지고 비디오를 다시 렌더링하고자 한다면 이 버전을 이용하면 된다.  
- ![w:150](./images/manimgl.png)
+ ![w:600](./images/manimgl.png)
 ③ ManimCairo: ManimGL의 예전 버전을 지칭하기 위한 이름이다. ManimGL 저장소의 cairo-backend 브랜치에서 찾아볼 수 있으며, 2019~2021년 Grant 가 더 빠른 OpenGL 렌더링을 위해 shaders 브랜치에서 작업했고, 이후 master(ManimCairo) 브랜치와 병합하며 ManimGL 브랜치를 만들었다. Grant의 옛날 애니메이션을 렌더링할 때 필요할 수 있다.
 
 ## manim vs manimgl vs manimcario 비교
