@@ -1,5 +1,10 @@
 # 3장 Manim으로 Scene 제작하기 기초
 
+파이썬에 대해서 약간의 기초 지식이 필요하다.
+
+- [파이썬 `import`하는 방법](./Chapter3-1.md)
+- [클래스, 객체, 메소드](./Chapter3-2.md)
+
 ## 3.1. 원 나타내기
 
 Manim을 처음 실행하여 보자.  
@@ -46,7 +51,44 @@ class CreateCircle(Scene):
 터미널 창에서 아래와 같이 코딩후 엔터를 치면 렌더링이 된다.
 
 ```bash
-manim -p EX_3-1.py
+~ manim -p EX_3-1.py
 ```
 
+렌더링 방법과 옵션은 아래 링크를 참조하시오.
+
+- [렌더링 방법](./Chapter3-4.md)
+- [렌더링 옵션](./Chapter3-3.md)
+
 그러면 아래와 같이 실행이 된다. 플래그(flag) `-p`는 렌더링후 실행시키라는 옵션이다.
+![실행](./images/EX_3-1.png)
+그러면 아래와 같이 실행된다. 동영상이 아니다. 그림이다. `self.add()`는 오브젝트만을 단지 추가할 뿐이다. 실행 파일도 그림을 볼 수 있는 맥의 경우 `미리보기`가 실행된다.
+
+코딩 중에 `self.add(Circle())`처럼 코딩을 할 수도 있으나 인스턴스를 사용하여 코딩을 한다. 그래야 여러 개의 객체를 사용할 수 있다. 아래와 같이 코딩을 하고 파일명을 EX_3-2.py로 하자.
+
+```python
+from manim import *
+
+class CreateCircle(Scene):
+    def construct(self):
+        cir = Circle() // cir이 인스턴스이다.
+        self.add(cir)
+```
+
+결과는 EX_3-1.py를 실행한 것과 같이 그림 프로그램이 실행되고 아래와 같다.
+![실행](./images/EX_3-2.png)
+
+## 3.2. 원을 커지면서 나타나는 애니메이션 실행하기
+
+애니메이션을 구현하려면 오브젝트를 `self.play()`로 실행을 시켜야 한다. 오브젝트 중심으로 부터 커지면서 나타나는 애니메이션 모듈은 `GrowFromCenter([오브젝트 이름])`을 사용하여야 한다. 아래와 같이 코딩을 하고 EX_3-3.py로 저장을 하자.
+
+```python
+from manim import *
+
+class CreateCircle(Scene):
+    def construct(self):
+        cir = Circle() // cir이 인스턴스이다.
+        self.play(GrowFromCenter(cir))
+```
+
+렌더링을 실행하자. 그러면 아래와 같이 실행이 된다.  
+![영상 실행](./movies/EX_3-3.mp4)

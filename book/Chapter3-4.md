@@ -1,4 +1,4 @@
-# manim 렌더링 형식:
+# manim 렌더링 형식
 
 ```bash
 manim [OPTIONS] FILE [SCENES]
