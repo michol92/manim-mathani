@@ -1,6 +1,6 @@
-# 3장 Manim으로 Scene 제작하기 기초
+# 3장 Manim으로 Scene 시작하기
 
-파이썬에 대해서 약간의 기초 지식이 필요하다.
+파이썬에 대해서 약간의 기초 지식이 필요하다. 아래 두 자료를 읽자.
 
 - [파이썬 `import`하는 방법](./Chapter3-1.md)
 - [클래스, 객체, 메소드](./Chapter3-2.md)
@@ -90,5 +90,70 @@ class CreateCircle(Scene):
         self.play(GrowFromCenter(cir))
 ```
 
-렌더링을 실행하자. 그러면 아래와 같이 실행이 된다.  
+Circle() 안에 attributes들을 정의 하지 않으면 기본값이 원점을 중심으로 하고 반지름이 1인 원을 출력한다.
+렌더링을 실행하자. 그러면 아래와 같이 실행 된다.  
 ![영상 실행](./movies/EX_3-3.gif)
+
+## 3.3 두 개의 scene 렌더링 하기
+
+이 번에는 한 파일에 여러 Scene를 렌더링 하는 것에 대하여 알아보자.
+
+두 개의 Scene으로 나누어서 렌더링을 하려고 한다.  
+첫 번째 Scene은 원이 중심이 원점이고 반지름이 1인 원이 커지면서 나타나게 하고, 두 번째 Scene은 이 정사각형이 그려지게 하려고 한다.
+
+```python
+from manim import *
+
+class GrowCircle(Scene):
+    def construct(self):
+        cir = Circle()
+        self.play(GrowFromCenter(cir))
+        self.wait(1)
+
+class CreateSquare(Scene):
+    def construct(self):
+        squ = Square()
+        self.play(Create(squ))
+
+```
+
+EX_3-4.py 파일 내에 여러 개의 Scene이 있으면 다음과 같은 여러 개의 렌더링 방법으로 실행하여야 한다.
+
+우선 첫 번째 렌더링이다.
+
+```bash
+manim -p EX_3-4.py
+```
+
+![렌더링 1](./images/EX_3-4-1.png)
+
+그러면 두 개의 Scene의 Scene의 이름이 보인다. 1. CreateSquare 2.GrowCircle을 선택하면 선택한 Scene이 렌더링 된다.  
+또한 강제로 GrowCircle Scene을 렌더링하려면 아래와 같이 실행하면 된다.
+
+```bash
+manim -p EX_3-4.py GrowCircle
+```
+
+![렌더링 3](./images/EX_3-4-3.png)
+
+강제로 CreateSquare Scene을 렌더링하려면 아래와 같이 실행하면 된다.
+
+```bash
+manim -p EX_3-4.py CreateSquare
+```
+
+![렌더링 4](./images/EX_3-4-4.png)
+
+그러나 모든 Scene를 렌더링 하려면 당므과 같이 실행하면 된다.
+
+```bash
+manim -p -a EX_3-4.py
+```
+
+![렌더링 5](./images/EX_3-4-5.png)
+
+실행은 다음과 같다.
+
+![정사각형 만들기](./images/EX_3-4-6.gif)
+
+![원 생성하기](./images/EX_3-4-7.gif)
