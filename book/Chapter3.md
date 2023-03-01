@@ -127,7 +127,7 @@ manim -p EX_3-4.py
 
 ![렌더링 1](./images/EX_3-4-1.png)
 
-그러면 두 개의 Scene의 Scene의 이름이 보인다. 1. CreateSquare 2.GrowCircle을 선택하면 선택한 Scene이 렌더링 된다.  
+그러면 두 개의 Scene의 Scene의 이름이 보인다. 1. CreateSquare 2. GrowCircle을 선택하면 선택한 Scene이 렌더링 된다.  
 또한 강제로 GrowCircle Scene을 렌더링하려면 아래와 같이 실행하면 된다.
 
 ```bash
@@ -144,7 +144,7 @@ manim -p EX_3-4.py CreateSquare
 
 ![렌더링 4](./images/EX_3-4-4.png)
 
-그러나 모든 Scene를 렌더링 하려면 당므과 같이 실행하면 된다.
+그러나 모든 Scene를 렌더링 하려면 다음과 플래그 -a를 넣어 실행하면 된다.
 
 ```bash
 manim -p -a EX_3-4.py
