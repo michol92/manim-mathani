@@ -57,7 +57,7 @@ $${\rm OP}=\sqrt{x^2 + y^2}.$$
 :white_medium_square:
 
 > :thought_balloon: **정리** ​​원점 $\rm O=\left(0,\,0\right)$에서 점 $\rm P\it=\left(x,\,y\right)$까지의 거리 $\rm OP$는
-> $$> \rm OP = \sqrt{{\it x}^2 +{\it y}^2}.\tag{1}> $$
+> $$ \rm OP = \sqrt{{\it x}^2 +{\it y}^2}.\tag{1}$$
 
 > :question: 두 점 ${\rm P} =\left(x_1,\,y_1\right)$, ${\rm Q}=\left(x_1,\,y_2\right)$에 대하여, 두 점 $\rm P$, $\rm Q$ 사이의 거리를 구하시오.
 
