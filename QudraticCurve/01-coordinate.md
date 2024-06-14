@@ -95,7 +95,9 @@ $${\rm PF}={\rm PN}-{\rm FN}={\rm PN}-{\rm RK}=y_1-y\label{ref3}\tag{1}$$
 $${\rm RE}={\rm RK}-{\rm EK}={\rm RK}-{\rm QM}=y-y_2\label{ref4}\tag{2}$$
 
 식 ($\ref{ref3}$)과 식 ($\ref{ref4}$)에 의해서
+
 $$\begin{align*}y_1-y&=y-y_2 \\ 2y&=y_1+y_2 \\ \therefore y&=\frac{y_1+y_2}{2}\end{align*}$$
+
 같은 방법으로 $\rm QE=FR$ 이므로 $\rm OK-OM=ON-OK$이다.
 
 따라서
