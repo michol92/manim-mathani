@@ -15,7 +15,8 @@ $$\rm PM \it=x,\,\rm PN\it=y$$
 예를 들어, $x=3$, $y=4$일 때 이에 해당하는 점을 평면 위에서 찾는다고 하자. 평행 방향으로 길이 단위(unit) 만큼 $\rm ON=3$, 수직방향으로 $\rm OM=4$가 되도록 두 점 $\rm M$, $\rm N$을 잡는다. 선분 $\rm MP$를 평행한 방향과 같은 방향으로 그리고, 선분 $\rm NP$를 수직 방향과 평행하게 그린다. 그러면 점 $\rm P$는 이들 두 선분 $\rm MP$, $\rm NP$의 교점이다. 그러면 $\rm PM=ON=3$이고 $\rm PN=OM=4$을 만족한다. 점 $\rm P$가 찾고자 하는 점이다([그림 1] 참조).
 
 <center><img src="./images/fig1-1.png" alt="fig1-1" style="zoom:13%;"/><figcaption>그림 1</figcaption></center>
-![그림 1]{./images/fig1-1.png}{w:300}
+
+![그림 1](./images/fig1-1.png){w:300}
 
 $x$ 값과 $y$ 값을 각각 점 $\rm P$의 **$x$ 좌표**, **$y$​​ 좌표**라 한다.
 
