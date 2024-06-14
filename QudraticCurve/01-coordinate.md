@@ -96,13 +96,13 @@ $${\rm RE}={\rm RK}-{\rm EK}={\rm RK}-{\rm QM}=y-y_2\label{ref4}\tag{2}$$
 
 식 ($\ref{ref3}$)과 식 ($\ref{ref4}$)에 의해서
 
-$$\begin{align*}y_1-y&=y-y_2 \\ 2y&=y_1+y_2 \\ \therefore y&=\frac{y_1+y_2}{2}\end{align*}$$
+$$y_1-y&=y-y_2 \\ 2y&=y_1+y_2 \\ \therefore y&=\frac{y_1+y_2}{2}$$
 
 같은 방법으로 $\rm QE=FR$ 이므로 $\rm OK-OM=ON-OK$이다.
 
 따라서
 
-$$\begin{align*}x-x_2&=x_1-x \\ 2x&=x_1+x_2 \\ \therefore x&=\frac{x_1+x_2}{2} \end{align*}$$
+$$x-x_2&=x_1-x \\ 2x&=x_1+x_2 \\ \therefore x&=\frac{x_1+x_2}{2} $$
 
 > :memo: **참고** 점 $\rm R$을 선분 $\rm PQ$에 대하여 두 점 $\rm P$, $\rm Q$​ 위에 같은 질량의 미립자가 있다고 가정하여 이 점을 **무게중심(Centre of Gravity)**라고도 한다.
 
