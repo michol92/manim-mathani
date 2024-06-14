@@ -16,8 +16,6 @@ $$\rm PM \it=x,\,\rm PN\it=y$$
 
 <center><img src="./images/fig1-1.png" alt="fig1-1" width="200" height="200"/><figcaption>그림 1</figcaption></center>
 
-![그림 1](./images/fig1-1.png){: width="300"}
-
 $x$ 값과 $y$ 값을 각각 점 $\rm P$의 **$x$ 좌표**, **$y$​​ 좌표**라 한다.
 
 기준이 되는 두 수직인 직선 중 평행한 직선을 $x$ 축, 수직인 직선을 $y$ 축이라 하고 이들 두 직선을 **좌표축**이라 하며, 교점을 **원점**이라 하고 점 $\rm O$라 표기한다. 이 좌표축 위의 한 점 $\rm P$를 일반적으로 **순서쌍 $\left(x,\,y\right)$​**라 표현한다. $\left(x,\,y\right)$를 간단히 점 $\rm P$의 **좌표**라고도 한다.
