@@ -100,14 +100,12 @@ $$\begin{align*}y_1-y&=y-y_2 \\ 2y&=y_1+y_2 \\ \therefore y&=\frac{y_1+y_2}{2}\e
 
 따라서
 
-$$
-\begin{align*}x-x_2&=x_1-x \\ 2x&=x_1+x_2 \\ \therefore x&=\frac{x_1+x_2}{2} \end{align*}
-$$
+$$\begin{align*}x-x_2&=x_1-x \\ 2x&=x_1+x_2 \\ \therefore x&=\frac{x_1+x_2}{2} \end{align*}$$
 
 > :memo: **참고** 점 $\rm R$을 선분 $\rm PQ$에 대하여 두 점 $\rm P$, $\rm Q$​ 위에 같은 질량의 미립자가 있다고 가정하여 이 점을 **무게중심(Centre of Gravity)**라고도 한다.
 
 > :thought_balloon: **정리** 두 점 ${\rm P}=\left(x_1, \,y_1\right)$​, }${\rm Q}=\left(x_2,y_2\right)$를 이은 선분 $\rm PQ$의 중점은
-> $$> \left(\frac{x_1+x_2}2,\,\frac{y_1+y_2}2 \right).> $$
+> $$\left(\frac{x_1+x_2}2,\,\frac{y_1+y_2}2 \right).$$
 
 ---
 
