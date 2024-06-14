@@ -65,7 +65,8 @@ $${\rm OP}=\sqrt{x^2 + y^2}.$$
 
 <center><img src="./images/fig1-4.png" alt="fig1-4" style="zoom:15%;" /><figcaption>그림 4</figcaption></center>
 
-$${\rm QK=MN=ON-OM}=\left|x_2-x_1\right|,\\{\rm PK=PN-KN=PN-QM}=\left|y_2-y_1\right|\label{ref1}\tag{1}$$
+$${\rm QK=MN=ON-OM}=x_1-x_2$$
+$${\rm PK=PN-KN=PN-QM}=y_1-y_2\label{ref1}\tag{1}$$
 
 식 ($\ref{ref1}$)을 사용하여 피타고라스 정리에 적용하면
 $${\rm PQ}^2={\rm QK}^2+{\rm PK}^2=\left(x_2-x_1\right)^2+\left(y_2-y1\right)^2.\label{ref2}\tag{2}$$
