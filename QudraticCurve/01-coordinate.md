@@ -57,7 +57,7 @@ $${\rm OP}=\sqrt{x^2 + y^2}.$$
 :white_medium_square:
 
 > :thought_balloon: **정리** ​​원점 $\rm O=\left(0,\,0\right)$에서 점 $\rm P\it=\left(x,\,y\right)$까지의 거리 $\rm OP$는
-> $$ \rm OP = \sqrt{{\it x}^2 +{\it y}^2}.\tag{1}$$
+> $$ \rm OP = \sqrt{{\it x}^2 +{\it y}^2}.$$
 
 > :question: 두 점 ${\rm P} =\left(x_1,\,y_1\right)$, ${\rm Q}=\left(x_1,\,y_2\right)$에 대하여, 두 점 $\rm P$, $\rm Q$ 사이의 거리를 구하시오.
 
@@ -73,7 +73,7 @@ $${\rm PQ}^2={\rm QK}^2+{\rm PK}^2=\left(x_2-x_1\right)^2+\left(y_2-y1\right)^2.
 $${\rm PQ}=\sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}.$$
 
 > :thought_balloon: **정리** 두 점 ${\rm P} =\left(x_1,\,y_1\right)$, ${\rm Q}=\left(x_1,\,y_2\right)$ 사이의 거리 $\rm PQ$는
-> $$> {\rm PQ}=\sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}.$$
+> $${\rm PQ}=\sqrt{\left(x_2-x_1\right)^2+\left(y_2-y_1\right)^2}.$$
 
 ---
 
