@@ -7,7 +7,7 @@
 ## 애플릿
 
 <iframe
-src="http://127.0.0.1:8000/Book_I/GGB_Html/Prop_4_Book_I_Apollonius.html"
+src="./GGB_Html/Prop_4_Book_I_Apollonius.html"
 width="800"
 height="600"
 frameborder="0"

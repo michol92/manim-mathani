@@ -12,12 +12,10 @@ $$
 
 그러면 $\rm LM^2=EM \cdot XM$이고 직사각형 $\rm EOXM$은 두 변 $\rm EH$, $\rm DE$를 두 변으로 하는 직사각형과 닮음이다.(단, $\rm XM$은 변 $\rm LM$의 일부 길이와 같다.)
 
-
-
 ## 애플릿
 
 <iframe
-src="/Book_I/GGB_Html/Prop_13_Book_I_Apollonius.html"
+src="./GGB_Html/Prop_13_Book_I_Apollonius.html"
 width="800"
 height="600"
 frameborder="0"

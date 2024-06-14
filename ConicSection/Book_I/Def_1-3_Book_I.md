@@ -9,7 +9,7 @@
 ### 원뿔 표면 애플릿
 
 <iframe
-src="http://127.0.0.1:8000/Book_I/GGB_Html/Def_1-1_Book_I_Apollonius.html"
+src="./GGB_Html/Def_1-1_Book_I_Apollonius.html"
 width="800"
 height="600"
 frameborder="0"
@@ -18,14 +18,13 @@ marginheight="0"
 marginwidth="0"
 scrolling="no"
 vspace="0"></iframe>
-
 
 ---
 
 ### 수직 원뿔 애플릿
 
 <iframe
-src="http://127.0.0.1:8000/Book_I/GGB_Html/Def_1-2_Book_I_Apollonius.html"
+src="./GGB_Html/Def_1-2_Book_I_Apollonius.html"
 width="800"
 height="600"
 frameborder="0"
@@ -34,7 +33,6 @@ marginheight="0"
 marginwidth="0"
 scrolling="no"
 vspace="0"></iframe>
-
 
 ---
 
