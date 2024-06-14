@@ -16,7 +16,7 @@ $$\rm PM \it=x,\,\rm PN\it=y$$
 
 <center><img src="./images/fig1-1.png" alt="fig1-1" style="zoom:13%;"/><figcaption>그림 1</figcaption></center>
 
-![그림 1](./images/fig1-1.png){w:300}
+![그림 1](./images/fig1-1.png)
 
 $x$ 값과 $y$ 값을 각각 점 $\rm P$의 **$x$ 좌표**, **$y$​​ 좌표**라 한다.
 
