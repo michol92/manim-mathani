@@ -8,7 +8,16 @@
 
 ### 원뿔 표면 애플릿
 
-<iframe src="./GGB_Html/Def_1-1_Book_I_Apollonius.html" width="800" height="600" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" vspace="0"></iframe>
+<iframe 
+src="https://github.com/michol92/manim-mathani/blob/main/ConicSection/GGB_Html/Def_1-1_Book_I_Apollonius.html"
+width="800"
+height="600"
+frameborder="0"
+framespacing="0"
+marginheight="0"
+marginwidth="0"
+scrolling="no"
+vspace="0"></iframe>
 
 ---
 
