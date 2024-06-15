@@ -9,7 +9,7 @@
 ### 원뿔 표면 애플릿
 
 <iframe 
-src="https://github.com/michol92/manim-mathani/ConicSection/Book_I/GGB_Html/Def_1-1_Book_I_Apollonius.html"
+src="./GGB_Html/Def_1-1_Book_I_Apollonius.html"
 width="800"
 height="600"
 frameborder="0"
